@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
 import dummyData from './dummy-data';
-import Comment from './components/CommentSection/Comment';
+import PostContainter from './components/PostContainer/PostContainer';
+import SearchBar from './components/SearchBarContainer/SearchBar';
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      state: [],
+      posts: dummyData
     };
   }
 
   render() {
     return (
       <div className='App'>
-        <Comment comment={this.state.comment} />
+        <SearchBar />
+        <PostContainter posts={this.state.posts} />
       </div>
     )
   }

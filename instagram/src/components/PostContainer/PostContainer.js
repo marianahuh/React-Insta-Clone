@@ -1,9 +1,11 @@
 import React from 'react';
+import Post from './Post';
+import './Post.css';
 
 const PostContainer = props => {
   return (
-    <div>
-      {props.post.map(p => <Post key={p.id} post={p} />)}
+    <div className='post-container'>
+      {props.posts.map(p => <Post key={p.imageUrl} post={p} />)}
     </div>
   );
 };
