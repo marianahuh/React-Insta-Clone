@@ -6,7 +6,7 @@ const Comment = props => {
   return (
     <div className='comment-text'>
       <span className='comment'>{props.comments.text}</span>
-      <span className='user'>{props.comments.username}</span>
+      <span className='user'>-{props.comments.username}</span>
     </div>
   )
 }
