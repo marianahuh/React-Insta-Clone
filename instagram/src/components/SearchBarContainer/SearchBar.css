@@ -1,0 +1,51 @@
+.search-bar-container {
+  border-bottom: 1px solid #3333;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #ffffff;
+}
+
+.banner {
+  height: 30px;
+  padding-top: 8%;
+}
+
+.camera {
+  font-size: 31px;
+  padding-top: 3%;
+}
+
+.divider {
+  font-size: 35px;
+  color: gray;
+  font-weight: lighter;
+  text-align: center;
+  padding-left: 7%;
+  padding-right: 6%;
+}
+
+.left-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+input {
+  text-align: center;
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+}
+
+.icon {
+  padding-right: 21%;
+  font-size: 20px;
+  color: gray;
+  width: 20px;
+  height: 20px;
+}
