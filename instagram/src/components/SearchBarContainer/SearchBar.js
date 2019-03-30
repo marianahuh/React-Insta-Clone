@@ -14,7 +14,7 @@ const SearchBar = props => {
       <input type='text' placeholder='🔍Search' />
       <div className='icon-wrapper'>
         <div className='icon'><i class='fa fa-compass'></i></div>
-        <div className='icon'><i class='fa fa-heart'></i></div>
+        <div className='icon'><i class='fa fa-heart-o'></i></div>
         <div className='icon'><i class='fa fa-user'></i></div>
       </div>
     </div>

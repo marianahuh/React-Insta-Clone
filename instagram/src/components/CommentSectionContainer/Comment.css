@@ -1,0 +1,28 @@
+.comment-text {
+  text-align: left;
+  padding: 2px;
+  margin-left: 10px;
+}
+
+.comment {
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.user {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.addComment {
+  margin-top: 2%;
+  font-size: 14px;
+  width: 95%;
+  height: 50px;
+  text-align: left;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  border-top: 1px solid lightgray;
+}

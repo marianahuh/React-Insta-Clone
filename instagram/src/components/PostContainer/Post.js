@@ -11,7 +11,9 @@ const Post = props => {
       <div className='post-img-container'>
         <img
           className='post-img'
-          scr={props.post.imageUrl} />
+          src={props.post.imageUrl}
+          alt='post thumbnail'
+        />
       </div>
       <CommentSection comments={props.post.comments} />
     </div>
