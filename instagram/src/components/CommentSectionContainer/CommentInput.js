@@ -2,10 +2,15 @@ import React from 'react';
 
 const CommentInput = props => {
   return (
-    <form>
-      <input className='addComment' type='text' placeholder='Add  a comment...' />
+    <form onSubmit={props.submitComment}>
+      <input className='addComment'
+        type='text'
+        placeholder='Add a comment...'
+        value={props.commet}
+        onChange={props.changeComment}
+      />
     </form>
-  )
-}
+  );
+};
 
 export default CommentInput;

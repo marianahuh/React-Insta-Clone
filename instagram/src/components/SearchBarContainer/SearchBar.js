@@ -15,7 +15,7 @@ const SearchBar = props => {
       <div className='icon-wrapper'>
         <div className='icon'><i class='fa fa-compass'></i></div>
         <div className='icon'><i class='fa fa-heart-o'></i></div>
-        <div className='icon'><i class='fa fa-user'></i></div>
+        <div className='icon'><i class='fa fa-user-o'></i></div>
       </div>
     </div>
   );

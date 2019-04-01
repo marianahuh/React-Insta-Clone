@@ -31,3 +31,13 @@
     height: auto;
     border-radius: 50%;
 }
+
+.like-section {
+  display: flex;
+}
+
+.like-section-wrapper {
+  width: 10px;
+  margin: 8px;
+}
+
