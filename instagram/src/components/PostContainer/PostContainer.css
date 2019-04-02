@@ -32,12 +32,22 @@
     border-radius: 50%;
 }
 
-.like-section {
+.like-icon-wrapper {
   display: flex;
 }
 
-.like-section-wrapper {
-  width: 10px;
+.like-icon {
+  display: flex;
+  width: 18px;
   margin: 8px;
+  font-size: 23px;
+}
+
+.like-wrapper {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+  padding: 1.7%;
+  padding-top: 0;
 }
 

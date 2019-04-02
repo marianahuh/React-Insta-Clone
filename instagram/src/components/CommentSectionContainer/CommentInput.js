@@ -6,7 +6,7 @@ const CommentInput = props => {
       <input className='addComment'
         type='text'
         placeholder='Add a comment...'
-        value={props.commet}
+        value={props.comment}
         onChange={props.changeComment}
       />
     </form>

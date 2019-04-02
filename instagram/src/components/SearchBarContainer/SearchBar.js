@@ -11,7 +11,9 @@ const SearchBar = props => {
         <div className='divider'>|</div>
         <img className='banner' src={IGLogo} alt='instagram logo' />
       </div>
-      <input type='text' placeholder='🔍Search' />
+      <div>
+        <input type='text' placeholder='🔍Search' onKeyDown={props.searchPosts} />
+      </div>
       <div className='icon-wrapper'>
         <div className='icon'><i class='fa fa-compass'></i></div>
         <div className='icon'><i class='fa fa-heart-o'></i></div>
