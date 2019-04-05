@@ -1,11 +1,12 @@
 import React from 'react';
+import { Button, Form, FormGroup, Input } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Login.css';
 
 class LoginPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // content: props.content,
       username: '',
       password: ''
     }
@@ -13,7 +14,7 @@ class LoginPage extends React.Component {
   inputChangeHandle = e =>
     this.setState({ [e.target.name]: e.target.value });
 
-  loginSubmit = () => {
+  loginSubmitHandle = () => {
     const user = this.state.username;
     localStorage.setItem('user', user);
     window.location.reload();
@@ -21,27 +22,33 @@ class LoginPage extends React.Component {
 
   render() {
     return (
-      <div className='login-content'>
+      <Form className='login-content'>
+        <h1>Entering Insta Clone</h1>
         <h2>Username:</h2>
-        <input className='login-username'
-          placeholder='Enter Username'
-          type='text'
-          name='username'
-          value={this.state.username}
-          onChange={this.inputChangeHandle}>
-        </input>
-        <h2>Password:</h2>
-        <input className='login-password'
-          placeholder='Enter Password'
-          type='password'
-          name='password'
-          value='{this.state.password}'
-          onChange={this.inputChangeHandle}>
-        </input>
-        <div className='login-btn'>
-          <button onClick={this.loginSubmit}>Log In</button>
-        </div>
-      </div>
+        <FormGroup>
+          <Input className='input-field'
+            placeholder='Enter Username'
+            type='text'
+            name='username'
+            value={this.state.username}
+            onChange={this.inputChangeHandle}
+          />
+        </FormGroup>
+        <FormGroup>
+          <h2>Password:</h2>
+          <Input className='input-field'
+            placeholder='Enter Password'
+            type='password'
+            name='password'
+            value='{this.state.password}'
+            onChange={this.inputChangeHandle}
+          />
+          <br />
+          <Button color='success' size='lg' onClick={this.loginSubmitHandle}>
+            Log In
+          </Button>
+        </FormGroup>
+      </Form>
     );
   }
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const LikeSection = props => {
   return [
     <div key='likes-icons-container' onClick={props.incrementLike}>
